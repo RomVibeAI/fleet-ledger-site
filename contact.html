@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Fleet Ledger Solutions for a free consultation. Get help with IFTA, CARB compliance, IRP registration, and fleet compliance services.">
+    <title>Contact Us | Fleet Ledger Solutions</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- ============================================
+         Header / Navigation
+         ============================================ -->
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="logo">
+                <img src="images/logo-full.png" alt="Fleet Ledger Solutions">
+            </a>
+            
+            <nav class="nav">
+                <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="services.html" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link nav__link--active">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============================================
+         Main Content
+         ============================================ -->
+    <main class="main">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-header__title">Contact Us</h1>
+                <p class="page-header__subtitle">Have questions or ready to get started? Reach out directly or book a free 15-minute consultation to discuss your fleet's needs.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section">
+            <div class="container">
+                <div class="contact-grid">
+                    
+                    <!-- Left Column: Contact Info & Calendar -->
+                    <div class="contact-info">
+                        <h2>Get In Touch</h2>
+                        
+                        <!-- Email -->
+                        <div class="contact-info__item">
+                            <div class="contact-info__icon">📧</div>
+                            <div class="contact-info__content">
+                                <h4>Email</h4>
+                                <a href="mailto:roman@fleetledgersolutions.com">roman@fleetledgersolutions.com</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Phone -->
+                        <div class="contact-info__item">
+                            <div class="contact-info__icon">📞</div>
+                            <div class="contact-info__content">
+                                <h4>Phone</h4>
+                                <a href="tel:+18049558862">(804) 955-8862</a>
+                            </div>
+                        </div>
+                        
+                        <!-- LinkedIn -->
+                        <div class="contact-info__item">
+                            <div class="contact-info__icon">💼</div>
+                            <div class="contact-info__content">
+                                <h4>LinkedIn</h4>
+                                <a href="https://linkedin.com/in/roman-alexander-b250423a1" target="_blank" rel="noopener noreferrer">linkedin.com/in/roman-alexander-b250423a1</a>
+                            </div>
+                        </div>
+
+                        <!-- Book a Consultation Section -->
+                        <div class="mt-4">
+                            <h3>Schedule a Free Consultation</h3>
+                            <p>Pick a time that works for you. We'll spend 15 minutes discussing your fleet, your current compliance challenges, and how Fleet Ledger Solutions can help.</p>
+                            
+                            <!-- Cal.com Booking Calendar -->
+                            <div class="calendar-embed">
+                                <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline-15min"></div>
+                                <script type="text/javascript">
+                                    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+                                    Cal("init", "15min", {origin:"https://app.cal.com"});
+                                    Cal.ns["15min"]("inline", {
+                                        elementOrSelector:"#my-cal-inline-15min",
+                                        config: {"layout":"month_view"},
+                                        calLink: "romanfls/15min",
+                                    });
+                                    Cal.ns["15min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Contact Form -->
+                    <div class="contact-form-section">
+                        <h3>Send Us a Message</h3>
+                        
+                        <!-- CONTACT FORM
+                             ----------------------------------------
+                             TO ADD FORM HANDLING:
+                             
+                             Option 1 - Formspree:
+                             Add action="https://formspree.io/f/YOUR-FORM-ID" method="POST" to the form tag
+                             
+                             Option 2 - Netlify Forms:
+                             Add data-netlify="true" and name="contact" to the form tag
+                             
+                             Option 3 - Custom Backend:
+                             Add your endpoint URL and JavaScript handler
+                             ---------------------------------------- -->
+                        <form class="contact-form" action="#" method="POST">
+                            <!-- Name Field -->
+                            <div class="form-group">
+                                <label for="name">Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required placeholder="Your full name">
+                            </div>
+                            
+                            <!-- Email Field -->
+                            <div class="form-group">
+                                <label for="email">Email <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required placeholder="your@email.com">
+                            </div>
+                            
+                            <!-- Phone Field -->
+                            <div class="form-group">
+                                <label for="phone">Phone <span style="color: var(--color-gray-dark);">(optional)</span></label>
+                                <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+                            </div>
+                            
+                            <!-- Fleet Size Field -->
+                            <div class="form-group">
+                                <label for="fleet-size">Fleet Size <span style="color: var(--color-gray-dark);">(optional)</span></label>
+                                <select id="fleet-size" name="fleet-size">
+                                    <option value="">Select fleet size...</option>
+                                    <option value="1-5">1-5 vehicles</option>
+                                    <option value="6-15">6-15 vehicles</option>
+                                    <option value="16-50">16-50 vehicles</option>
+                                    <option value="51-100">51-100 vehicles</option>
+                                    <option value="100+">100+ vehicles</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Message Field -->
+                            <div class="form-group">
+                                <label for="message">Message <span class="required">*</span></label>
+                                <textarea id="message" name="message" required placeholder="Tell us about your fleet and compliance needs..."></textarea>
+                            </div>
+                            
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn--primary" style="width: 100%;">Send Message</button>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================
+         Footer
+         ============================================ -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <img src="images/logo-full.png" alt="Fleet Ledger Solutions">
+                    </div>
+                    <p class="footer__tagline">Fleet compliance made simple.</p>
+                </div>
+                <div class="footer__contact">
+                    <p>📧 <a href="mailto:roman@fleetledgersolutions.com">roman@fleetledgersolutions.com</a></p>
+                    <p>📞 <a href="tel:+18049558862">(804) 955-8862</a></p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom-logo">
+                    <img src="images/logo-icon.png" alt="Fleet Ledger Solutions">
+                </div>
+                <p class="footer__copyright">© 2025 Fleet Ledger Solutions LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Navigation Script -->
+    <script>
+        // Mobile menu toggle
+        const navToggle = document.querySelector('.nav__toggle');
+        const navList = document.querySelector('.nav__list');
+        
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navList.classList.toggle('active');
+            
+            // Update aria-expanded attribute
+            const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+            navToggle.setAttribute('aria-expanded', !isExpanded);
+        });
+        
+        // Close menu when clicking on a link
+        const navLinks = document.querySelectorAll('.nav__link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navToggle.classList.remove('active');
+                navList.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+</html>
+
