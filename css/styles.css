@@ -627,6 +627,7 @@ p:last-child {
     margin-bottom: 15px;
     width: 250px;
     height: 250px;
+    object-position: center 20%;
 }
 
 .about-content--with-image::after {
@@ -1004,6 +1005,7 @@ p:last-child {
         margin: 0 auto 20px auto;
         width: 200px;
         height: 200px;
+        object-position: center 20%;
     }
     
     .about-founder__content {
